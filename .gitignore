@@ -1,5 +1,6 @@
 # IDE-specific
 .idea/
+cleanup.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
