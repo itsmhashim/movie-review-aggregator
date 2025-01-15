@@ -16,6 +16,9 @@ CACHE_EXPIRY_DAYS = 365
 
 def fetch_movie_ratings(movie):
     try:
+        all_movies= [review.movie for review in Review.query.all()]
+        print(f"Movies in database: {all_movies}")
+
         original_movie = movie.strip()  # Keep the movie name as provided
         print(f"Checking for exact match in the database for: {original_movie}")
 
